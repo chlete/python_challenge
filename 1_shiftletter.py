@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 def shift2toright (line,shift):
-"""
-Shifts the letter a given number
-"""
+   """
+   Shifts the letter a given number
+   """
    outline = ""
    for char in line:
        decimal = ord(char) + shift # convert letter into decimal and shift
