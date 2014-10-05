@@ -6,7 +6,7 @@ def shift2toright (line,shift):
    """
    outline = ""
    for char in line:
-       decimal = ord(char) + shift # convert letter into decimal and shift
+       decimal = (ord(char) + shift) %26  # convert letter into decimal and shift
        char = chr(decimal)         # convert the decimal back into char
        outline += str(char)        # append the result to a string
    return(outline) 
